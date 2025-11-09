@@ -18,5 +18,13 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
+        TextView text = findViewById(R.id.textView6);
+        text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(login.this, signup.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -27,21 +27,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        TextView text = findViewById(R.id.textView6);
-        text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, signup.class);
-                startActivity(intent);
-            }
-        });
-        TextView text1 = findViewById(R.id.textView10);
-        text1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, login.class);
-                startActivity(intent);
-            }
-        });
     }
 }
